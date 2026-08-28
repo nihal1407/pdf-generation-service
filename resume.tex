@@ -1,82 +1,85 @@
-%-------------------------
-% Resume in Latex
-% Author : Audric Serador
-% Inspired by: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
+\documentclass[a4paper,11pt]{article}
 
-\documentclass[letterpaper,11pt]{article}
-
-\usepackage{fontawesome5}
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
+\usepackage[margin=1cm]{geometry}
 \usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\input{glyphtounicode}
-\input{custom-commands}
+\usepackage{hyperref}
+\usepackage{xcolor}
 
+\titleformat{\section}{\bfseries\large}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{2pt}{2pt}
 
-
-% Custom font
-\usepackage[default]{lato}
-
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-\setlength{\footskip}{6pt}
-
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
-
-% Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
+\setlist[itemize]{leftmargin=0.2in,itemsep=1pt,topsep=1pt}
 
 \begin{document}
 
-%-------------------------------------------%
-%%%%%%  RESUME STARTS HERE  %%%%%
+% Header
+\begin{center}
+    {\LARGE \textbf{Nikita Patil}} \\[1pt]
+    \textbf{CyberArk Consultant - 4.5+ YOE} \\[1pt]
+    \href{mailto:nikitaajitpatil@gmail.com}{nikitaajitpatil@gmail.com} $|$ 7248992760 $|$ 
+    \href{https://www.linkedin.com/in/nikita-patil}{linkedin.com/in/nikita-patil}
+\end{center}
 
-%----------HEADING----------%
-\input{src/heading}
+%------------------------------------------------
 
-%-----------SUMMARY-----------%
-\input{src/summary}
+\section{Professional Summary}
+\vspace{2pt}
+CyberArk Engineer with 4.5 years of experience in Privileged Access Management (PAM), Identity and Access Management (IAM), CyberArk SAS, and CyberArk Privilege Cloud. Expertise in CyberArk Vault, PVWA, CPM, PSM, AIM/AAM, Secret Rotation Service (SRS), account onboarding, password management, privileged session monitoring, and enterprise integrations. Experienced in CyberArk cloud, SRS and production operations.
 
-%-----------EXPERIENCE-----------%
-\input{src/experience}
 
-%-----------SKILLS-----------%
-\input{src/skills.tex}
+% Technical Skills
+\vspace{4pt}
+\section{Technical Skills}\vspace{4pt}
 
-%-----------CERTIFICATIONS-----------%
-\input{src/certifications.tex}
+\textbf{PAM Technologies:} CyberArk PAS, CyberArk Privilege Cloud, CyberArk PAM Self Hosted \\
+\textbf{CyberArk Components:} Vault, PVWA, CPM, PSM, PTA, AIM, AAM, EPM, SIA Connector\\
+\textbf{Databases \& Caching:} PostgreSQL, MS SQL, MongoDB, Oracle \\
+\textbf{IAM Technologies:} Active Directory, LDAP, SSO, MFA, RBAC\\
+\textbf{Integrations:} ServiceNow, Splunk\\
+\textbf{Operating Systems:} Windows Server, Linux\\
+\textbf{Tools:} Jira, Confluence, WinSCP, Putty, CyberArk APIs, SQL Server, Oracle, PostgreSQL\\
 
-%-----------EDUCATION-----------%
-\input{src/education.tex}
+\section{Professional Experience}
+\vspace{4pt}
+\subsection*{Senior CyberArk Engineer -- CyberArk Cloud Databse team \hfill Feb 2025 -- Present}
+\textit{Tata Consultancy Services, Pune}
 
-%-------------------------------------------%
+\begin{itemize}
+\item Onboarded Oracle, PostgreSQL, MS SQL Server, and MongoDB privileged accounts into CyberArk Privilege Cloud using Secure Infrastructure Access (SIA).
+\item Implemented and configured Secret Rotation Service (SRS) for automated password rotation and verification of database accounts.
+\item Configured password rotation, verification, reconciliation, and compliance policies.
+\item Configured CyberArk platforms, CMA servers, and connectivity components for secure database onboarding.
+\item Troubleshoot complex onboarding, password rotation, and connectivity issues involving CyberArk Cloud and SRS.
+\item Created design documents, onboarding guides, runbooks, and supported SIT/UAT milestones and production readiness.
+\item Managed Safe creation, Safe permissions, RBAC implementation, and privileged account lifecycle management.
+\end{itemize}
+\subsection*{CyberArk Engineer  \hfill Nov 2021 -- Feb 2025}
+\textit{Tata Consultancy Services, Pune}
+
+\begin{itemize}
+\item Administered CyberArk components including Vault, PVWA, CPM, and PSM across enterprise environments.
+\item Onboarded Windows, Linux, GCP, Cloud SQL, and application accounts into CyberArk.
+\item Deployed and configured PSM components and supported privileged session monitoring activities.
+\item Managed password verification, reconciliation, and automated password rotation using CPM.
+\item Resolved critical CyberArk onboarding, platform, and password management issues while supporting audit and compliance requirements.
+\end{itemize}
+
+%------------------------------------------------
+\vspace{2pt}
+\section{Certifications}
+\vspace{2pt}
+\begin{itemize}
+\item CyberArk Defender Certification
+\item CyberArk Sentry Certification
+\item CyberArk Trustee Certification
+\end{itemize}
+
+%------------------------------------------------
+
+\section{Education}
+\vspace{2pt}
+Bachelor of Engineering (B.E.)\
+Shivaji University, Kolhapur
+
 \end{document}
